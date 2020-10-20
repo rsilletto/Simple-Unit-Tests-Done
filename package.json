@@ -1,0 +1,28 @@
+{
+  "name": "simple_unit_tests",
+  "version": "1.0.0",
+  "description": "A small example of unit tests using Mocha and Chai",
+  "main": "./server/src/app.js",
+  "scripts": {
+    "start": "node ./server/src/app.js",
+    "pretest": "eslint ./server --fix",
+    "test": "mocha --timeout 5000 --recursive --reporter nyan server/test"
+  },
+  "keywords": [
+    "Mocha",
+    "Chai",
+    "Unit",
+    "Test"
+  ],
+  "author": "Cody Van De Mark",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
