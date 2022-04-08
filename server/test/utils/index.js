@@ -6,7 +6,7 @@ const config = require('../test_config.js');
 // grab the utility module from our server source
 const utils = require('../../src/utils');
 
-const limits = config.limits;
+const { limits } = config;
 
 // The describe function allows you to group a series of
 // tests by name to run asynchronously. You can use multiple
@@ -27,7 +27,7 @@ describe('utils', () => {
     // by chai
     /** This function should test the addition of two numbers as
         described by the test case.
-    **/
+    * */
     it('should return addition of two numbers', (done) => {
       // call the function to test with hard coded test data
       const sum = utils.add(10, 5);

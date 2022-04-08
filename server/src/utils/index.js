@@ -3,7 +3,7 @@ const MAX = 20;
 const MIN = 0;
 
 // Prevent numbers from going outside of MIN and MAX
-const clamp = num => Math.min(Math.max(num, MIN), MAX);
+const clamp = (num) => Math.min(Math.max(num, MIN), MAX);
 
 // add two numbers within limits specified by MIN and MAX
 const add = (num1, num2) => {
