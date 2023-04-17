@@ -1,4 +1,3 @@
-require('dotenv').config();
 const http = require('http');
 const mathUtils = require('./utils/math.js'); // grab utils for simple math functions
 
