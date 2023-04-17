@@ -2,7 +2,7 @@ require('dotenv').config();
 const http = require('http');
 const mathUtils = require('./utils/math.js'); // grab utils for simple math functions
 
-const port = 3000;
+const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
 const onRequest = (req, res) => {
   let num = mathUtils.add(10, 15); // should get capped to 20
