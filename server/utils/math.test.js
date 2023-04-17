@@ -1,4 +1,15 @@
-/* This test file will test all the functionality from math.js in this same folder.
+/* In this demo we are using Jest (https://jestjs.io/) to unit test our code. Unit
+   tests are automated tests which ensure that our code is performing in the way
+   that we expect. It is triggered in the project by running "npm test". We can see
+   why in the package.json file.
+
+   Unit testing is one of the major things that continuous integration tools like
+   CircleCI were made for. The idea behind having unit tests, beyond just ensuring
+   our code works the first time, is to ensure that nothing breaks in the future.
+   This becomes especially necessary when we have a large codebase being edited by
+   multiple people.
+
+   This test file will test all the functionality from math.js in this same folder.
    When developing tests, there are two approaches for where to put your test files.
    One is what we see here, where the tests are alongside the original source files.
    The other is to create a separate "test" folder that mirrors the "server" folder,
