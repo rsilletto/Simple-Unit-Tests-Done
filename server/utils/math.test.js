@@ -1,7 +1,8 @@
 /* In this demo we are using Jest (https://jestjs.io/) to unit test our code. Unit
    tests are automated tests which ensure that our code is performing in the way
    that we expect. It is triggered in the project by running "npm test". We can see
-   why in the package.json file.
+   why in the package.json file. When run, Jest will run every single file in the
+   project that ends with the extension .test.js
 
    Unit testing is one of the major things that continuous integration tools like
    CircleCI were made for. The idea behind having unit tests, beyond just ensuring
@@ -36,8 +37,7 @@ const testVars = {
 
    Describe, test, expect, and toBe() are all functions imported from Jest.
    Rather than having to import Jest here, it will inject itself into every
-   file that it checks when we run "npm test". Jest will check every file
-   in the project with the extension .test.js
+   file that it checks when we run "npm test".
 
    .toBe is a matcher function. There are many matcher functions that can be
    added to an expect statement to check for a final value. We will see another
