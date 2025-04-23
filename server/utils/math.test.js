@@ -57,6 +57,24 @@ describe('add()', () => {
     test('should clamp number to minimum', () => {
         expect(mathUtils.add(testVars.min - 2, 1)).toBe(testVars.min);
     });
+
+    // tests can function as documentation, but also this is clear from the function parameters
+    test('should accept two numbers', () => { // this test is somewhat unneccessary
+
+    });
+
+    test('should return b for 0 + b', () => {
+
+    });
+
+    test('should return 20 for Infinity + b', () => {
+
+    });
+
+    test('should return a value >= 0 and <= 20', () => {
+
+    });
+
 });
 
 // This is a suite for the subtract method
